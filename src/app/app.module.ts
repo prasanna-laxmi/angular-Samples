@@ -9,6 +9,7 @@ import { EmployeeComponent } from './emp/employee/employee.component';
 import { EmployeeTitlePipe } from './emp/employee/employee-title.pipe';
 import { SimpleComponent } from './emp/simple/simple.component';
 import { EventComponent } from './emp/event/event.component';
+import { EmployeeService } from './emp/employee.service';
 
 // import { HelloComponent } from './hello.component';
 
@@ -21,8 +22,9 @@ import { EventComponent } from './emp/event/event.component';
     EmployeeListComponent,
     EmployeeCountComponent,
     SimpleComponent,
-    EventComponent
+    EventComponent,
   ],
+  providers: [EmployeeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
